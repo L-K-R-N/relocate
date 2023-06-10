@@ -75,3 +75,19 @@
     };
     scrollTo();
 }());
+
+
+// slider 
+function slider(active) {
+    document.querySelectorAll('.info__cards-slide')[active].classList.add('info__cards-slide_active')
+    document.querySelector('.info__cards-container').addEventListener('click', (e) => {
+        let target = e.target.closest('.info__cards-slide');
+        if (!target) return;
+        for (let slide of document.querySelectorAll('.info__cards-slide')) {
+            slide.classList.remove('info__cards-slide_active')
+        }
+        target.classList.add('info__cards-slide_active');
+    })
+}
+
+slider(2)

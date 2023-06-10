@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relocate</title>
     <meta name="discriprion" content=""/>
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="../img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="msapplication-config" content="../img/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -39,7 +39,7 @@
                             <a href="#help" class="menu__link js-scroll header__link">ЧЕМ МЫ ПОМОЖЕМ?</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#info" class="menu__link js-scroll header__link">О СЕРВИСЕ</a>
+                            <a href="#info" class="menu__link js-scroll header__link">ЧТО ПОСЕТИТЬ?</a>
                         </li>
                         <li class="menu__item">
                             <a href="#connect" class="menu__link-connect js-scroll header__link">ПРИСОЕДИНИТЬСЯ</a>
@@ -85,7 +85,7 @@
                                     Получите бесплатный доступ к интерактивным задачам и заданиям с собеседований, которые используются компаниями Германии
                                 </p>
                                     <div><input type="text" name="user__name" class="former__input" placeholder="Ваше имя"></div>
-                                    <div><input type="text" name="user__mail" class="former__input" placeholder="Ваша почта"></div>
+                                    <div><input type="email" name="user__mail" class="former__input" placeholder="Ваша почта"></div>
                                     <button type="submit" name="submit" class="former__submit">ПРИСОЕДИНИТЬСЯ</button>  
                             </div>  
                         </form>
@@ -280,36 +280,55 @@
         <div class="wrapper-mini">
             <div class="info__items">
                 <h2 class="info__title">
-                    Как работает сервис?
+                    Какие места посетить?
                 </h2>
                 <p class="info__desc">
-                    Наш сервис - коллекция материалов и интерактивных заданий рассчитанных на Frontend девелоперов с опытом (middle/senior level). Наши материалы гарантированно помогут вам пройти интервью в немецкой ИТ компании.
+                    Вы сможете найти большое количество достопримечатльностей, которые непременно подарят вам положительные эмоции!
                 </p>
-                    <div class="info__cards">
-                        <div class="info__card info-card-left">
-                            <div class="info__card-header">
-                                <div class="info__card-img">
-                                   
-                                </div>
-                            </div>
+                <div class="info__cards">
+                    <div class="info__cards-container">
+                        <div
+                            class="info__cards-slide"
+                            style="background-image: url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');"
+                        >
+                          <h3 class="slide__title">Rothenburg</h3>
                         </div>
-                        <div class="info__card info-card-center">
-                            <div class="info__card-header">
-                                <div class="info__card-img">
-                                    
-                                </div>
-                            </div>
+                        <div
+                            class="info__cards-slide"
+                            style="
+                                background-image: url('https://images.unsplash.com/photo-1422360902398-0a91ff2c1a1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1130&q=80');
+                              "
+                        >
+                          <h3 class="slide__title">Hamburg</h3>
                         </div>
-                        <div class="info__card info-card-right">
-                            <div class="info__card-header">
-                                <div class="info__card-img">
-                                    
-                                </div>
-                            </div>
+                        <div
+                            class="info__cards-slide"
+                            style="
+                                background-image: url('https://images.unsplash.com/photo-1506760610100-1af6025cf0c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80');
+                              "
+                        >
+                          <h3 class="slide__title">Brandenburg Gate</h3>
                         </div>
-                    </div>
+                        <div
+                            class="info__cards-slide"
+                            style="
+                                background-image: url('https://images.unsplash.com/photo-1495316364083-b5916626072e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+                              "
+                        >
+                          <h3 class="slide__title">Neuschwanstein Castle</h3>
+                        </div>
+                        <div
+                            class="info__cards-slide"
+                            style="
+                                background-image: url('https://images.unsplash.com/photo-1574764750249-a33d713b95a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+                              "
+                        >
+                          <h3 class="slide__title">Heidelberg</h3>
+                        </div>
+                      </div>
+                </div>
                 <div class="info__desc info__desc-bottom">
-                    Изучайте материалы, решайте задачи и подтягивайте уровень английского языка. Все это доступно на бесплатном тарифе уже сейчас.
+                    Вы сможете найти большое количество достопримечатльностей, которые непременно подарят вам положительные эмоции!
                 </div>
                 <div class="button__container">
                         <button type="button" class="button-2">
@@ -375,7 +394,7 @@
                             <input type="text" name="user__name" class="former__input" placeholder="Ваше имя">
                         </div>
                         <div>
-                            <input type="text" name="user__mail" class="former__input" placeholder="Ваша почта">
+                            <input type="email" name="user__mail" class="former__input" placeholder="Ваша почта">
                         </div>
                         <div>
                             <input type="submit" name="submit" class="former__submit" value="ПРИСОЕДИНИТЬСЯ">
